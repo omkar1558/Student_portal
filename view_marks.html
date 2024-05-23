@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Marks</title>
+</head>
+<body>
+    <h2>View Marks</h2>
+    <p>Linux: {{ marks.linux }}</p>
+    <p>Python: {{ marks.python }}</p>
+    <p>DBMS: {{ marks.dbms }}</p>
+    <p>Big Data: {{ marks.big_data }}</p>
+    <p>Java: {{ marks.java }}</p>
+    <p>Machine Learning: {{ marks.machine_learning }}</p>
+    <p>Data Visualization: {{ marks.data_visualization }}</p>
+    <a href="{{ url_for('admin_dashboard') }}">Back to Admin Dashboard</a>
+</body>
+</html>

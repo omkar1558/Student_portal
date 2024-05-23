@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Student</title>
+</head>
+<body>
+    <h2>Delete Student</h2>
+    <!-- Confirmation message for deleting a student -->
+    <form method="post">
+        {{ csrf_token() }}
+        <button type="submit">Confirm Delete</button>
+    </form>
+    <a href="{{ url_for('admin_dashboard') }}">Back to Admin Dashboard</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
+    

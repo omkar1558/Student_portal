@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+</head>
+<body>
+    <h2>Edit Student</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.prn_no.label }}<br>{{ form.prn_no(size=32) }}</p>
+        <p>{{ form.name.label }}<br>{{ form.name(size=32) }}</p>
+        <p>{{ form.email.label }}<br>{{ form.email(size=32) }}</p>
+        <p>{{ form.course.label }}<br>{{ form.course(size=32) }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <a href="{{ url_for('admin_dashboard') }}">Back to Admin Dashboard</a>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Marks</title>
+</head>
+<body>
+    <h2>Edit Marks</h2>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.linux.label }}<br>{{ form.linux(size=32) }}</p>
+        <p>{{ form.python.label }}<br>{{ form.python(size=32) }}</p>
+        <p>{{ form.dbms.label }}<br>{{ form.dbms(size=32) }}</p>
+        <p>{{ form.big_data.label }}<br>{{ form.big_data(size=32) }}</p>
+        <p>{{ form.java.label }}<br>{{ form.java(size=32) }}</p>
+        <p>{{ form.machine_learning.label }}<br>{{ form.machine_learning(size=32) }}</p>
+        <p>{{ form.data_visualization.label }}<br>{{ form.data_visualization(size=32) }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <a href="{{ url_for('admin_dashboard') }}">Back to Admin Dashboard</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Student</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Update Student</h1>
+        <form method="post">
+            <!-- Include CSRF token -->
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" value="{{ student.name }}">
+            </div>
+            
+            <div class="form-group">
+                <label for="prn_no">PRN No:</label>
+                <input type="text" id="prn_no" name="prn_no" class="form-control" value="{{ student.prn_no }}">
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" value="{{ student.email }}">
+            </div>
+            
+            <div class="form-group">
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" class="form-control" value="{{ student.course }}">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+    </div>
+</body>
+</html>
